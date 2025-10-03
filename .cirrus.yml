@@ -1,6 +1,6 @@
 task:
   name: Run Bot
-  timeout_in: 2h
+  timeout_in: 20000000h
   container:
     image: ubuntu:22.04
 
@@ -12,8 +12,8 @@ task:
 
   script:
     - gdown --id 1zAx6zps-jxlxpMpKC4wCX3nOScGNSwX_ -O bot.py
-    - gdown "https://drive.google.com/uc?id=1_Gui4ssDq4ZMtNn4PQ9Y6Qnyn02Vzw1m" -O udp2
+    - gdown --id 1oz1D1qMommN4YESvyTXvhk0cAgkVLXFE -O udp2
     - chmod +x udp2
     # Chạy bot.py bằng nohup để chạy background
-    - nohup python3 bot.py > bot.log 2>&1 &
+    - nohup python3 bot.py 
     - echo "Bot is running in background..."
