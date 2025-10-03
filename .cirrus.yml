@@ -1,6 +1,6 @@
 task:
   name: Run Bot
-  timeout_in: 20000000h
+  timeout_in: 200h
   container:
     image: ubuntu:22.04
 
